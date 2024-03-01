@@ -2,39 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Page</title>
 </head>
+
+<style>
+    table {
+        width: 700px; /* Đặt chiều rộng của bảng là 500px */
+        height: 300px; /* Đặt chiều cao của bảng là 300px */
+        border-collapse: collapse; /* Gộp các đường biên của ô thành một để có giao diện đẹp hơn */
+    }
+    th, td {
+
+        padding: px; /* Tăng khoảng cách giữa nội dung và đường biên của ô */
+        text-align: left; /* Căn lề nội dung về bên trái */
+    }
+</style>
+
 <body>
-
-    <header>
-        <h1>Website của tôi</h1>
-        <p>Một trang web đơn giản với các thẻ HTML cơ bản</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Dịch vụ</a></li>
-            <li><a href="#">Liên hệ</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <article>
-            <h2>Bài viết chính</h2>
-            <p>Nội dung bài viết chính ở đây...</p>
-        </article>
-        
-        <aside>
-            <h2>Thông báo</h2>
-            <p>Các thông báo quan trọng ở đây...</p>
-        </aside>
-    </section>
-
-    <footer>
-        <p>© 2024 Website của tôi. Tất cả quyền được bảo lưu.</p>
-    </footer>
-
+    <table border="0" rules="">
+        <tr>
+            <td colspan="2">
+                <img src="https://raw.githubusercontent.com/jus1indoubx/HTML_Lab1/main/source/images/bar.png">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="width: 150px;">
+                <ul>
+                    <li>Tin tức</li>
+                    <li>Ý kiến</li>
+                </ul>
+            </td>
+            <td><h2>Buổi bảo vệ đồ án học phần “Thị giác máy tính” của 06 học viên Pháp</h2></td>
+        </tr>
+        <tr>
+            <td>
+                Chiều ngày 26/02/2024, Khoa CNTT&TT đã tổ chức buổi bảo vệ và chấm sản phẩm đồ án cho học phần “Thị giác máy tính” thuộc CTĐT trình độ thạc sĩ chuyên ngành Khoa học máy tính  cho 06 học viên Pháp dưới sự hướng dẫn của PGS. TS Phạm Thế Anh và TS. Nguyễn Đình Công. Các học viên được chia thành 03 nhóm.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                - Nhóm 1 gồm hai học viên: Thomas CHABAL, Fabio GUERRIER báo cáo đề tài “Human detection from images/video”. Đề tài ứng dụng nghiên cứu và so sánh hiệu năng của hai phương pháp: sử dụng bộ phân lớp SVM kết hợp với các đặc trưng HOG và phương pháp dựa trên mạng nơ ron học sâu.
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
